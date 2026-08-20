@@ -74,8 +74,10 @@ jobs:
           python -m spacy download en_core_web_sm
 
       - name: Execute Pytest Suite
+        env:
+          PYTHONPATH: .
         run: |
-          pytest tests/ -v
+          python -m pytest tests/ -v
 
   # -------------------------------------------------------------------
   # 3. LangSmith Evaluation Regression Gate
@@ -116,6 +118,8 @@ jobs:
           python -m spacy download en_core_web_sm
 
       - name: Run LangSmith Evaluation Runner
+        env:
+          PYTHONPATH: .
         run: |
           python evals/run_evals.py
 
