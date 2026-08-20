@@ -1,0 +1,65 @@
+.
+├── api_server.py
+├── app.py
+├── config
+│   └── settings.py
+├── data
+│   ├── billing_records.json
+│   ├── generate_docs.py
+│   ├── git_repositories.json
+│   ├── kb.json
+│   └── monitoring_telemetry.json
+├── evals
+│   ├── evaluators.py
+│   └── run_evals.py
+├── folder-structure.txt
+├── graph
+│   ├── graph_builder.py
+│   ├── router.py
+│   ├── state.py
+│   └── visualizer.py
+├── guardrails
+│   ├── injection_detector.py
+│   ├── pii_sanitizer.py
+│   ├── policy_enforcer.py
+│   └── schema_validator.py
+├── inspect_state.py
+├── mcp_services
+│   ├── billing_service.py
+│   ├── github_service.py
+│   └── monitoring_service.py
+├── nodes
+│   ├── auth_node.py
+│   ├── billing_node.py
+│   ├── classify_node.py
+│   ├── code_node.py
+│   ├── confidence_node.py
+│   ├── guardrail_node.py
+│   ├── human_node.py
+│   ├── kb_node.py
+│   ├── mcp_node.py
+│   ├── monitoring_node.py
+│   └── solution_node.py
+├── presidio_governance
+│   ├── analyzer.py
+│   ├── anonymizer.py
+│   └── rehydrator.py
+├── README.md
+├── requirements.txt
+├── schemas
+│   └── api_schemas.py
+├── security
+│   ├── auth.py
+│   └── rbac.py
+├── services
+│   ├── mcp_client.py
+│   ├── memory_service.py
+│   ├── openai_service.py
+│   └── redis_service.py
+├── test_presidio_guardrail.py
+├── tests
+│   └── tests_graph_routes.py
+└── utils
+    └── logger.py
+
+13 directories, 49 files
